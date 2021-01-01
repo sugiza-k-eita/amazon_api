@@ -20,15 +20,12 @@ product = amazon.get_product("")
 #（）の中にはswichのASIN名を代入
 print(product.title)
 #念のため、この時点でちゃんとswichの情報を取得したか確認
-#上記の動作は最初の一回だけでいいので、その後は消去してください
 count = 0        
 while True:
     product = amazon.get_product("")
-    #（）の中にはswichのASIN名を代入
-    print(product.title)
-    #念のため、この時点でちゃんとswichの情報を取得したか確認
+    #（）の中にはASIN名を代入
+    print(product.titl
     if len(product) == 0:
-    #数字は0ではない可能性があります。依頼が決まりましたら、再度調べさせていただきます。
         print("no switch found 404")
     else:
         print("検知しました")
