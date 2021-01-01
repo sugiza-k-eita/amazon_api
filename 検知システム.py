@@ -17,9 +17,8 @@ amazon = AmazonAPI(KEY, SECRET, TAG, COUNTRY)
 
 
 product = amazon.get_product("")
-#（）の中にはswichのASIN名を代入
+#（）の中にはASIN名を代入
 print(product.title)
-#念のため、この時点でちゃんとswichの情報を取得したか確認
 count = 0        
 while True:
     product = amazon.get_product("")
